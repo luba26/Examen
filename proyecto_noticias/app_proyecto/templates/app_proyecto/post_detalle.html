@@ -1,0 +1,26 @@
+{% load static %}
+{% extends "subir_noticias.html" %}
+{% load tz %}
+{% block content %}
+
+<a href="{% url 'app_proyecto:api' %}">Volver a la lista</a>
+
+{% if post.fecha_publicacion == None   %}
+<form method="POST" action="{% url 'app_proyecto:detalle' post.pk %}">
+    {% csrf_token %}
+    <input type="hidden" value="{{post.pk}}">
+    <input type="submit" value="Publicar">
+</form>
+{% endif %}
+<div style="margin:0 auto">
+    <h1 style="text-align:center"><a href="{% url 'app_proyecto:detalle' post.pk %}">{{ post.titulo }}</a></h1>
+    <hr>
+    <p>Publicado: {{ post.fecha_publicacion }}</p>
+    <p>Autor: {{ post.autor }}</p>
+    <hr>
+    <p style="text-align:center"><img src="/media/{{ post.imagen }}" style="max-width:500px;"></p>
+    <p>{{ post.contenido|linebreaksbr }}</p>
+</div>
+
+
+{% endblock content %}

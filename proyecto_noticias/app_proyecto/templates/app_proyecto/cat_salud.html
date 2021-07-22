@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    <title>CAOS NEWS-SALUD</title>
+  </head>
+  <body>
+     <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+        CAOS NEWS  
+      </a>
+          <form style class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form> 
+    </nav>
+
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+      </nav>
+    </div>
+
+    <br>
+       <h1 
+          style="font-family: 
+          'Times New Roman', Times, serif;
+          text-align: center; 
+          border: red 2px solid; 
+          background-color: black; 
+          color: blanchedalmond;"
+  
+        >NOTICIAS DE SALUD
+      
+      </h1>
+    <br>
+ 
+
+    <div style="text-align: center;" class="card mb-3" style="max-width: 900px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <a href="SALUD1.HTML"  title="COVID2">
+              <img alt="COVID2"  src="{% static 'IMG/COVID2.jfif' %}" width="300" height="170" />
+             </a>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Pfizer analiza eficacia de vacunas en niños"</h5>
+              <p class="card-text">Avanzan los esfuerzos en la investigación de vacunas contra el covid-19 para niños.</p>
+              <p class="card-text"><small class="text-muted">Por Jennifer Montoya, CNN Español Publicado a las 13:25 ET (17:25 GMT) 16 abril, 2021</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;" class="card mb-3" style="max-width: 900px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <a href="salud2.html"  title="covid">
+              <img alt="covid"  src="{% static 'IMG/COVID1.jpg' %}" width="300" height="170" />
+             </a>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">El número de muertes por covid-19 supera los 3 millones en todo el mundo</h5>
+              <p class="card-text">Más de 3 millones de personas en todo el mundo han muerto de covid-19 desde el inicio de la pandemia, informó este sábado la Universidad Johns Hopkins.</p>
+              <p class="card-text"><small class="text-muted">Por Martin Goillandeau, 14:46 ET(18:46 GMT) 17 Abril, 2021</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div style="text-align: center;" class="card mb-3" style="max-width: 900px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <a href="salud3.html" title="COVID3">
+            <img alt="COVID3"  src="{% static 'IMG/COVID3.jpg' %}" width="300" height="170" />
+           </a>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">MINSAL PRESENTA LOS RESULTADOS DEL PRIMER REPORTE DEL ESTUDIO DE LA VACUNA DE SINOVAC EN CHILE: TIENE UN 89% DE EFECTIVIDAD PARA PREVENIR INGRESO A UCI Y 80% PARA PREVENIR MUERTE DEBIDO A COVID</h5>
+            <p class="card-text">A primera hora el Ministerio de Salud dio a conocer el 1º Reporte del estudio “Efectividad de la vacuna CoronaVac con virus inactivado contra SARS-CoV-2 en Chile”.</p>
+            <p class="card-text"><small class="text-muted">Al 15 de abril, se han aplicado 11.068.110 dosis de la vacuna CovonaVac en el país.</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+</html>

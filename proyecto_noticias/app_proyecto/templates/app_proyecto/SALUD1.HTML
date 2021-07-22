@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <title>CAOS NEWS-salud</title>
+  </head>
+  <body>
+     <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+        CAOS NEWS  
+      </a>
+          <form style class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form> 
+    </nav>
+
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+      </nav>
+    </div>
+    </nav>  
+    <hr>
+    <h4 class="categoria" style="margin-right: 50px;margin-left: 50px;">NEWS-salud</h4>
+    <hr>
+    <h1 class="titular" style="margin-right: 50px;margin-left: 50px;">Pfizer analiza eficacia de vacunas en niños </h1>
+    <hr>
+    <h4 class="autor" style="margin-right: 50px;margin-left: 50px;">Jennifer Montoya   
+    <br>
+        <p class="card-text"><small class="text-muted"> Actualizado a: 16 de abril de 2021</small></p>
+       <img src="{% static 'IMG/COVID2.jfif' %}" width="800px" height="300px" alt="Universidad_Catolica" style="vertical-align:middle;margin: 100px 100px">
+    </p>
+    <div class="col-md-8"></div>
+      <div class="card-body">
+        <h5 class="card-title">Avanzan los esfuerzos en la investigación de vacunas contra el covid-19 para niños.</h5>
+
+        <p class="card-text"><small class="text-muted">
+            Investigadores de Stanford Medicine y Cincinnati Children’s Hospital anunciaron este jueves el inicio de pruebas con la vacuna de 
+            Pfizer y BioNTech en niños de tan solo dos años.
+            segun explciaron en un comunicado en el caso de stanford medicine el ensayo cuenta con un total de 144 participantes entre los 5 y 2 años
+            de todo el pais a los que se les administrara tres dosis de la vacuna para comprobar su seguridad y tolerabilidad para este grupo de edad
+        </small></p>
+
+      </div>
+    </div>
+</body>
+</html> 
+

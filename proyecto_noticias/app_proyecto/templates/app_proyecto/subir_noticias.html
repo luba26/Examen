@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Ejemplo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAccesos"
+                aria-controls="navbarAccesos" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarAccesos">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'gestion_usuario:inicio' %}">index</a></li>
+                    {% if not request.user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'gestion_usuario:login' %}">iniciar sesión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'gestion_usuario:registro' %}">registrar</a></li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'gestion_usuario:logout' %}">logout</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+    </div>
+</body>

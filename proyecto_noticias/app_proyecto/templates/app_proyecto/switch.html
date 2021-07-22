@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>La producción inmediata de Nintendo Switch está garantizada, pero no descartan falta de stock</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+        CAOS NEWS  
+      </a>
+          <form style class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form> 
+    </nav>
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+      </nav>
+    </div>
+    <hr>
+    <h4 class="categoria" style="margin-right: 50px;margin-left: 50px;">-Ocio</h4>
+    <hr>
+    <h1 class="titular" style="margin-right: 50px;margin-left: 50px;">La producción inmediata de Nintendo Switch está garantizada, pero no descartan falta de stock</h1>
+    <br>
+    <hr>
+    <h4 class="autor" style="margin-right: 50px;margin-left: 50px;">Borja Ruete<br>
+    Actualizado el 12 de abril de 2021</h4>
+    <img src="{% static 'IMG/portada.jpg' %}" width="1000px" height="500px" alt="portada switch" style="vertical-align:middle;margin: 100px 100px">
+    <div class="col-md-8"></div>
+      <div class="card-body">
+        <p class="card-text">
+          En época de coronavirus, la producción de piezas de hardware ha sufrido problemas, 
+    por lo que las consolas de nueva generación de Sony y Microsoft no están llegando a las tiendas como deberían. 
+    En el caso de Nintendo, el presidente Shuntaro Furukawa se ha referido a la situación de Nintendo Switch en una entrevista con Nikkei.
+    De acuerdo con el directivo, en la actualidad disponen de los materiales necesarios para que la producción siga adelante. Sin embargo,
+    los de Kioto no dejan cerrada la puerta a la posible escasez de stock en el futuro, ya que la demanda sigue siendo muy alta.
+    “Hemos sido capaces de asegurar los suficientes materiales para la producción inmediata de semiconductores para Switch”, 
+    ha dicho. “Con todo, en Japón y otros países la demanda ha sido muy alta desde el principio del año, 
+    por lo que es posible que haya escasez [de stock] en algunas tiendas a futuro”, reconoce. 
+    Según Furukawa, es “complicado” determinar cómo afrontarán este problema si sucede, 
+    “pero en algunos casos tal vez no estemos preparados” para garantizar todos los pedidos.
+    </p>
+  </div>
+</div>
+</body>
+</html>

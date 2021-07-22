@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <title>CAOS NEWS-Deporte</title>
+  </head>
+  <body>
+     <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+        CAOS NEWS  
+      </a>
+          <form style class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form> 
+    </nav>
+
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+      </nav>
+    </div>
+    </nav>  
+    <hr>
+    <h4 class="categoria" style="margin-right: 50px;margin-left: 50px;">NEWS-Deportes</h4>
+    <hr>
+    <h1 class="titular" style="margin-right: 50px;margin-left: 50px;"> "Fui arquero de la UC": el capítulo más desconocido del chileno que apunta a la NBA</h1>
+    <hr>
+    <h4 class="autor" style="margin-right: 50px;margin-left: 50px;">Pablo Vera / Daniel Tobar<br>
+        <p class="card-text"><small class="text-muted"> Actualizado a: 17 de abril de 2021</small></p>
+       <img src="{% static 'IMG/nba_deportes.jpg' %}" width="800px" height="300px" alt="Universidad_Catolica" style="vertical-align:middle;margin: 100px 100px">
+    </p>
+    <div class="col-md-8"></div>
+      <div class="card-body">
+        <h5 class="card-title">Nicolás Carvacho, basquetbolista que brilla en Bulgaria y que tiene opciones de llegar a la NBA.</h5>
+
+        <p class="card-text"><small class="text-muted">
+            Nació en Chile, pero luego se fue a vivir a Estados Unidos, la tierra de su madre. Sin embargo, la conexión con nuestro país es bastante profunda: defiende a la Roja y en su adolescencia vivió por un tiempo en Santiago. 
+            En ese tiempo, su carrera como deportista pudo cambiar por completo.
+            <br>
+            <br>
+            "Es una historia divertida. Fui a Chile por seis meses cuando tenía 15 años para jugar fútbol como arquero en Universidad Católica y me encantó. Mis padres han vivido en Estados Unidos durante toda mi vida, pero en esa época tomé la decisión de que mi deporte sería el fútbol. Decidí jugar en Chile, porque en Estados Unidos el fútbol está creciendo, pero no está al nivel de pasión que la gente tiene allá por el fútbol", cuenta en diálogo con As.
+            ¿Qué pasó entonces? "Luego de ese período en Santiago volví a Estados Unidos durante el período de vacaciones de Navidad y fui a ver un partido de básquetbol en mi antiguo colegio. Ahí dije '¿saben qué? Ahora voy a jugar básquetbol'. Supongo que tomé la decisión correcta, mirar ese partido cambió mi vida entera", recuerda.
+
+        </small></p>
+      </div>
+    </div>
+</body>
+</html> 

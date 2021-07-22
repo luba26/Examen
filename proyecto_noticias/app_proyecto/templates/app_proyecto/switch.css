@@ -1,0 +1,32 @@
+.categoria{
+    color: gray;
+    margin-left: 100px;
+    margin-top: auto;
+    margin-right: 100px;
+    margin-bottom: auto;
+}
+.titular{
+    margin-left: 100px;
+    margin-top: auto;
+    margin-right: 100px;
+    margin-bottom: auto;
+}
+.autor{
+    color: gray;
+    margin-left: 100px;
+    margin-top: auto;
+    margin-right: 100px;
+    margin-bottom: auto;
+    font-family: 'Gill Sans MT';
+}
+.texto{
+    margin-left: 100px;
+    margin-top: auto;
+    margin-right: 100px;
+    margin-bottom: auto;
+    font-size: 200%;
+}
+#portada{
+    vertical-align: middle;
+    margin: 100px 100px"
+}

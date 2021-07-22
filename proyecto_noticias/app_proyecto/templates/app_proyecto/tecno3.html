@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <title>CAOS NEWS-Tecnologia</title>
+  </head>
+  <body>
+     <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+        CAOS NEWS  
+      </a>
+          <form style class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form> 
+    </nav>
+
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+      </nav>
+    </div>
+    </nav>  
+    <hr>
+    <h4 class="categoria" style="margin-right: 50px;margin-left: 50px;">NEWS-Tecnologias</h4>
+    <hr>
+    <h1 class="titular" style="margin-right: 50px;margin-left: 50px;"> ¿Es mejor tener la laptop enchufada todo el tiempo o usar la batería?: esto es lo que dicen los expertos </h1>
+    <hr>
+    <h4 class="autor" style="margin-right: 50px;margin-left: 50px;"> BBC News world
+            
+    <br>
+        <p class="card-text"><small class="text-muted"> Actualizado a: 16 de abril de 2021</small></p>
+       <img src="{% static 'IMG/laptop2.jpg' %}" width="800px" height="300px" alt="Universidad_Catolica" style="vertical-align:middle;margin: 100px 100px">
+    </p>
+    <div class="col-md-8"></div>
+      <div class="card-body">
+        <h5 class="card-title">¿Cómo usas tu laptop? Una pregunta bastante común sobre el uso de las laptops es cómo prolongar la vida útil de la 
+                               batería (o al menos, cómo evitar acortarla más de lo normal).</h5>
+
+        <p class="card-text"><small class="text-muted">
+          Si bien todas las baterías se deterioran con el paso del tiempo, muchos usuarios se cuestionan si el uso que les damos puede influir
+          aunque sea ligeramente en su capacidad de retener energía y de alimentar nuestros aparatos por más tiempo.
+          Si es así, ¿entonces cómo debemos usar las baterías?
+          Es decir, ¿debemos mantenerlas cargadas al 100% todo el tiempo o debemos conectarlas y desconectarlas de acuerdo a su nivel de energía?
+          Varios expertos con los que habló BBC Mundo recomendaron cuál es la mejor manera de gastar las baterías, que en su mayoría están hechas 
+          de litio (ya sea de iones de litio o de polímeros de litio).
+
+        </small></p>
+
+        <img src="{% static 'IMG/laptop.jpg' %}" width="800px" height="300px" alt="portada gato" style="vertical-align:middle;margin: 100px 100px">
+
+        <P><p class="card-text"><small class="text-muted">
+          "La tecnología de baterías mejora cada vez más con cada generación. Hace 10 años, la eficiencia de las baterías de las laptops comenzaba 
+           a degradarse después de un par de cientos de ciclos de carga", dice Ashley Rolfe, jefe de Tecnología de Lenovo en Irlanda y Reino Unido, 
+           a BBC Mundo.
+           Ahora las baterías de laptops suelen tener un tiempo de vida de entre tres a cinco años, en los que pueden completar entre 500 y 1.000 
+           ciclos de carga.
+           "Uno quiere que la batería le dé la mayor cantidad posible de energía por cada carga y que dure entre tres a cinco años", dice a BBC 
+           Mundo Kent Griffith, investigador de tecnologías de la energía de la Universidad Northwestern, EE.UU.
+           ¿Cómo lograr ese balance?
+           Dejar una laptop enchufada y al 100% todo el tiempo "es absolutamente seguro y perfectamente normal", afirma Rolfe, de Lenovo, a BBC Mundo.
+            </small></p></P>
+      </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <title>CAOS NEWS-Salud</title>
+  </head>
+  <body>
+     <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+        CAOS NEWS  
+      </a>
+          <form style class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form> 
+    </nav>
+
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+      </nav>
+    </div>
+    </nav>  
+    <hr>
+    <h4 class="categoria" style="margin-right: 50px;margin-left: 50px;">NEWS-Salud</h4>
+    <hr>
+    <h1 class="titular" style="margin-right: 50px;margin-left: 50px;"> MINSAL PRESENTA LOS RESULTADOS DEL PRIMER REPORTE DEL ESTUDIO DE LA VACUNA DE SINOVAC EN CHILE: 
+                         TIENE UN 89% DE EFECTIVIDAD PARA PREVENIR INGRESO A UCI Y 80% PARA PREVENIR MUERTE DEBIDO A COVID </h1>
+    <hr>
+    <h4 class="autor" style="margin-right: 50px;margin-left: 50px;">La Tercera  
+    <br>
+        <p class="card-text"><small class="text-muted"> Actualizado a: 16 de abril de 2021</small></p>
+       <img src="{% static 'IMG/COVID3.jpg' %}" width="800px" height="300px" alt="Universidad_Catolica" style="vertical-align:middle;margin: 100px 100px">
+    </p>
+    <div class="col-md-8"></div>
+      <div class="card-body">
+        <h5 class="card-title">A primera hora el Ministerio de Salud dio a conocer el 1º Reporte del estudio “Efectividad de la vacuna CoronaVac 
+                               con virus inactivado contra SARS-CoV-2 en Chile”.</h5>
+
+        <p class="card-text"><small class="text-muted">
+            El doctor el Rafael Araos, asesor de la Subsecretaría de Salud Pública del Ministerio de Salud, fue el encargado de presentar los
+            resultados que demuestran que en la “vida real”, la vacuna que más se ha inoculado en Chile sí protege de los síntomas, 
+            hospitalizaciones, ingreso a la UCI y muerte.
+            A la fecha, del total de vacunados en el país, el 90,1% de las personas ha recibido la vacuna de Sinovac, mientras que el 9,9%, 
+            la vacuna de la farmacéutica Pfizer.
+            Según expuso Araos, los resultados se basan en el seguiemiento de 10 millones 500 mil personas, de los cuales, cuatro millones fueron 
+            inoculados con segundas dosis, y revelaron que la efectividad de CoronaVac al día 14 después de la segunda dosis es el siguiente:
+            67% de efectividad para prevenir Covid-19 sintomático.
+            85% de efectividad para prevenir hospitalización.
+            89% de efectividad para prevenir ingreso a UCI
+            80% de efectividad para prevenir muerte.
+            En este sentido, explicó, ese 67% de efectividad para prevenir Covid-19 sintomático quiere decir que de 100 personas que hubieran 
+            tenido Covid-19, solamente habrán 33 casos si todos estamos vacunados.
+            Acerca del 80% de efectividad para prevenir muerte, Araos dijo que significa que de 100 personas que hubiesen muerto por Covid-19, 
+            20 lo harán si estamos todos vacunados.
+            Este es el primer estudio de este tipo realizado en el país y que dará a conocer cuan efectiva a resultado la vacuna del laboratorio 
+            Sinovac en la población chilena.
+            Hay que recordar que la vacuna CoronaVac fue aprobada el pasado 20 de enero por el Instituto de Salud Pública para su uso de 
+            emergencia en Chile.
+            Al 15 de abril, se han aplicado 11.068.110 de dosis de esta vacuna en el país.
+
+        </small></p>
+
+        <img src="{% static 'IMG/salud3.2.jfif' %}" width="800px" height="300px" alt="portada gato" style="vertical-align:middle;margin: 100px 100px">
+
+        <P><p class="card-text"><small class="text-muted">
+            En Chile, un grupo de científicos liderados por un equipo de investigadores de la Universidad Católica, está realizando un ensayo
+            clínico con esta vacuna, para medir, entre otros aspectos, el tipo de inmunidad que genera.
+            En los resultados preliminares que han dado a conocer, ya adelantaron que el 90% de quienes recibieron la vacuna lograron generar 
+            anticuerpos contra el virus Sars-CoV-2, el causante de la pandemia de Covid-19 que nos afecta.
+            Hoy, a la luz de los nuevos antecedentes entregados por el Minsal, Susan Bueno, académica de la UC, investigadora del Instituto 
+            Milenio en Inmunología e Inmunoterapia (IMII) y directora científica del ensayo, destaca que “los resultados preliminares de 
+            efectividad presentados hoy son muy alentadores, ya que muestran el efecto positivo de la vacunación en la población”.
+            </small></p></P>
+      </div>
+    </div>
+</body>
+</html> 

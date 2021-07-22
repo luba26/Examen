@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>CAOS NEWS-Internacional</title>
+    <script>
+        $(document).ready(() => {
+            $("#btntraer").click(() => {
+                const url = "https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=h76V6KKs6tvbRIh7m9cJhjGHtszTcsf3";
+                $.get(url,(data) => {
+                console.log(data)
+                let resultados = data.results;
+                $.each(resultados, (index, item) => {
+                    let titulo = item.title;
+                    let enlace = item.url;
+                    let autor = item.byline;
+                    let publi = item.published_date;
+                    $("#body_categoria").append("<tr><td>" + titulo + "</td></tr>"+
+                                                "<td>"+autor+"</td>"+
+                                                "<td>"+publi+"</td>"+
+                                                "<td>"+enlace+"</td>");
+                })
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+          CAOS NEWS  
+        </a>
+    </nav>
+    </div>
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+          <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+          <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+          <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+          <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+          <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+          <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+        </nav>
+      </div>
+<div class="container">
+    <button id="btntraer"class="btn btn-primary">
+    traer titulos
+    </button>
+    <table class="table responsive">
+    <thead>
+        <tr>
+            <td>titulo</td>
+            <td>autor</td>
+            <td>fecha de publicacion</td>
+            <td>enlace a la pagina</td>
+        </tr>
+    </thead>
+    <tbody id="body_categoria">
+
+    </tbody>
+    </table>
+</div>
+</body>

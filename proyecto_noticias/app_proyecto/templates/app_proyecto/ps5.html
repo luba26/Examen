@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>PS5 y Xbox Series con el mismo problema que PS3 y PS4: control sobre hasta cuándo podrás jugar</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+        CAOS NEWS  
+      </a>
+          <form style class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form> 
+    </nav>
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+      </nav>
+    </div>
+    <hr>
+    <h4 class="categoria" style="margin-right: 50px;margin-left: 50px;">-Ocio</h4>
+    <hr>
+    <h1 class="titular" style="margin-right: 50px;margin-left: 50px;">PS5 y Xbox Series con el mismo problema que PS3 y PS4: control sobre hasta cuándo podrás jugar</h1>
+    <br>
+    <hr>
+    <h4 class="autor" style="margin-right: 50px;margin-left: 50px;">José David Muñoz<br>
+    Actualizado el 18 de abril de 2021</h4>
+    <img src="{% static 'IMG/ps5.jpg' %}" width="1000px" height="500px" alt="portada switch" style="vertical-align:middle;margin: 100px 100px">
+    <div class="col-md-8"></div>
+      <div class="card-body">
+        <p class="card-text">
+            Parece que las pobres decisiones de Sony en consolas que impedían jugar en PS3 y PS4, salpican ahora a PS5, según un tuit del grupo de preservación de juegos y consolas DoesItPlay.
+            En la nueva consola no se podrá jugar si la batería del reloj (conocida como CMOS) deja de funcionar y con ello no se podrá conectar a los servidores de Sony.
+            Esto lo que significa es que, en caso de poder reemplazar el CMOS de PS5, los juegos se perderán nuevamente en un futuro en el que Sony decida cerrar servidores. 
+            Las pruebas iniciales sugieren que esto sólo tiene impacto, de momento, en juegos digitales, aunque si es algo como en PS4 los juegos en formato físico también se verán afectados;
+            la comunidad se refiere a esto como el CBOMB.
+    </p>
+    <p class="card-text">
+        Esto del CBOMB alude a que las consolas de Sony son como bombas de relojería en cuanto al DRM usado, ya que dependen del CMOS y de los servidores, PS5 siendo similar a las otras. 
+        Lo que significa que si la batería del reloj deja de funcionar no se podrá jugar en la consola, pero más aún -ya que esto se descubrió en PS4 fueran digitales o físicos- no se podrán reproducir en PS5, 
+        pero por ahora esto parece estar limitado a los digitales.
+        Este "fallo" fue descubierto en PS4 por los trofeos, necesitan el reloj interno para funcionar e impedir que se cambien fecha y hora y así no se abuse del sistema. Según estas pruebas, PS5 cuenta con el mismo sistema, 
+        y aunque es sencillo reemplazar el CMOS, en el momento en que Sony decida cerrar servidores como ocurría hace semanas, estamos en el mismo escenario. "El CMOS sólo puede tener un tiempo fijo de dos maneras: PSN o hacks", 
+        decía Does it Play a IGN India.
+        Si nos ponemos en lo peor, como es lo mismo que hay en PS4, en caso de que Sony decida cerrar servidores en PS5, no nos queda mucha legalidad si queremos jugar en la consola.
+        Quieren aclarar que esto no sólo ocurre en consolas de Sony, al parecer Xbox One y Xbox Series también sufren de CBOMB. "Para clarificar, Xbox One y Series también son bombas. 
+        Ambas requieren de activaciones online para incluso activar una cuenta Xbox Live. Esto dará el mismo resultado, pero con la diferencia de que, al contrario que en PlayStation en Xbox no se podrá reparar manualmente".
+</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <title>CAOS NEWS-Deporte</title>
+  </head>
+  <body>
+     <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+        CAOS NEWS  
+      </a>
+          <form style class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form> 
+    </nav>
+
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+      </nav>
+    </div>
+    </nav>  
+    <hr>
+    <h4 class="categoria" style="margin-right: 50px;margin-left: 50px;">NEWS-Deportes</h4>
+    <hr>
+    <h1 class="titular" style="margin-right: 50px;margin-left: 50px;"> Universidad Católica aguantó sobre el final y pudo mantener la ventaja que le sacó durante los primeros 45 minutos a un Curicó Unido en buen nivel.</h1>
+    <hr>
+    <h4 class="autor" style="margin-right: 50px;margin-left: 50px;">José Tomas Fernández<br>
+        <p class="card-text"><small class="text-muted"> Actualizado a: 16 de abril de 2021</small></p>
+       <img src="{% static 'IMG\deportes.curico.jpg' %}" width="800px" height="300px" alt="Universidad_Catolica" style="vertical-align:middle;margin: 100px 100px">
+    </p>
+    <div class="col-md-8"></div>
+      <div class="card-body">
+        <h5 class="card-title">LA UC GANA CON SUFRIMIENTO</h5>
+
+        <p class="card-text"><small class="text-muted">
+            Cerrando la jornada futbolística del viernes, Universidad Católica superó por 2-1 a Curicó Unido en San Carlos de Apoquindo, por la cuarta fecha del Campeonato Chileno 2021.
+            Curicó empezó manejando la pelota e instalándose en campo rival. Igualmente, su primera jugada de riesgo vino de un contra ataque que pilló mal parada a la UC, que había servido un córner a favor. Pablo Parra ejecutó un pase casi frontal, a media altura, en donde el balón empezó a frenarse al dar su primer contacto con el césped,
+            algo que ocurrió precisamente a la espalda de los jugadores cruzados que estaban en zona defensiva. Esto permitió que Bayron Oyarzo pudiera controlar, ingresar al área y anotar.
+            Sin embargo, Edson Cisternas levantó su banderín y José Cabero anuló el tanto. Desde el VOR, eso sí, se tomaron cuatro minutos para comunicarle al árbitro central que Oyarzo estaba adelantado. Sin embargo, las líneas trazadas en la transmisión televisiva dejaron muchas dudas, particularmente por la ubicación de Parot, pues una de las líneas lo cruzó.
+
+        </small></p>
+
+        <img src="{% static 'IMG/catolica 2.jpg' %}" width="800px" height="300px" alt="portada gato" style="vertical-align:middle;margin: 100px 100px">
+
+        <P><p class="card-text"><small class="text-muted">
+            Si bien a Católica le costó hacerse con el balón, a los 11 minutos llegó al gol tras buena recuperación de Gonzalo Tapia, gran lanzamiento largo de Luciano Aued y definición perfecta de Diego Buonanotte: derechazo cruzado y rasante, pelota que dio en el palo y entró al arco de Martín Perafán.
+            De ahí en más, el elenco visitante intentó manejar la pelota y poco daño pudo hacer. Los dirigidos por Gustavo Poyet, por su parte, intentaban salir con rapidez para sorprender, pero pocas veces encontraron espacios para volver a marcar.
+            Increíblemente, a pesar de que el equipo de Martín Palermo mostraba protagonismo, no logró hacer daño. Incluso fue Católica el que avisó con remate de Tapia que pasó cerca del poste de Perafán. Peor aún para la visita: en el segundo minuto de descuento del primer tiempo la tomó Buonanotte, habilitó a José Pedro Fuenzalida y este sacó un centro que cabeceó Fernando Zampedri para decretar el 2-0.
+            Justo antes de que se fueran al descanso, Dituro evitó con un manotazo lo que era el descuento de Franco Bechtholdt, tras gran centro de Parra.
+            <br> 
+            <br>
+            El segundo tiempo comenzó con un tempranero gol del conjunto tortero: centro de José Rojas, cabezazo de Ronald de la Fuente, manotazo salvador de Dituro y descuento de Leandro Benegas -que había ingresado tras el descanso- en área chica.
+            Poyet intentó darle refresco a su equipo y sustituyó a Buonanotte y Tapia, ambos amonestados, y puso a Marcelino Núñez y Gastón Lezcano, que a partir del minutos 70 tuvieron que cumplir labores más defensivas, dejando muy solo a Zampedri, que en la segunda etapa solo tuvo una ocasión de gol, tras un centro de Fuenzalida. Eso y poco más.
+            Curicó siguió manejando la pelota en campo rival, también tuvo un cabezazo de Fernando Coniglio y fue Dituro el que evitó el empate. Luego, Benegas también desvió por la vía aérea y Coniglio repitió la fórmula en el minuto 88'.
+            A pesar de que los curicanos tuvieron la pelota, les costó generar y por lo mismo abusaron del juego aéreo, que fue la fórmula que más les funcionó para poder inquietar al portero cruzado. ¿La más clara? A los 90, con Parra, que remató desde la izquierda y entre Dituro y el palo evitaron el 2 a 2.
+            <br>    
+            </small></p></P>
+      </div>
+    </div>
+</body>
+</html> 

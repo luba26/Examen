@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <title>CAOS NEWS-Actualidad</title>
+  </head>
+  <body>
+     <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+        CAOS NEWS  
+      </a>
+          <form style class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form> 
+    </nav>
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+      </nav>
+    </div>
+    </nav>
+    <hr>
+    <h4 class="categoria" style="margin-right: 50px;margin-left: 50px;">-Actualidad</h4>
+    <hr>
+    <h1 class="titular" style="margin-right: 50px;margin-left: 50px;"> SpaceX: la NASA selecciona a la empresa de Elon Musk para construir la nave con la que regresará a la Luna <br>
+    Estamos lejos de que a los gatos se les reconozcan como propios los 365 días del año, pero es una cuestión de tiempo</h1>
+    <br>
+    <hr>
+    <h4 class="autor" style="margin-right: 50px;margin-left: 50px;">Paul Ricon<br>
+        <p class="card-text"><small class="text-muted"> actualizado 17 abril 2021</small></p>
+       <img src="{% static 'IMG\actualidad nasa 2.jpg' %}" width="800px" height="300px" alt="portada gato" style="vertical-align:middle;margin: 100px 100px">
+    </p>
+    <div class="col-md-8"></div>
+      <div class="card-body">
+        <h5 class="card-title">La NASA</h5>
+
+        <p class="card-text"><small class="text-muted">El vehículo trasportará al próximo hombre y a la primera mujer hasta la superficie lunar, según el programa Artemis de la agencia espacial.
+          Otra de las metas del programa será llevar a la Luna a la primera persona de color.
+          El diseño del vehículo lunar está basado en la nave Starship de SpaceX, que está siendo sometido a pruebas en una estación experimental en el sur de Texas.
+          SpaceX estaba compitiendo contra una licitación conjunta compuesta de gigantes aeroespaciales tradicionales y la empresa Amazon, de Jeff Bezos, como también una propuesta de Dynetics, una compañía de tecnología basada en Alabama.
+         <br>
+          El valor total del contrato otorgado a la empresa de Musk es de US$2.890 millones.
+          "Con esta selección, la NASA y nuestros socios completarán la primera misión de demostración tripulada a la superficie de la Luna en el siglo XXI a medida que la agencia da un paso al frente hacia la igualdad de las mujeres y la exploración a largo plazo del espacio profundo", declaró Kathy Lueders, directora de la exploración humana de la agencia.
+          "Este paso crítico coloca a la humanidad en el camino hacia una exploración lunar sostenible y nos mantiene enfocados en las misiones más lejanas en el Sistema Solar, incluyendo Marte".
+        </small></p>
+
+        <img src="{% static 'IMG\nasa 3noticia.jpg' %}" width="800px" height="300px" alt="portada gato" style="vertical-align:middle;margin: 100px 100px">
+
+        <P><p class="card-text"><small class="text-muted">El programa Artemis, iniciado durante el gobierno de Donald Trump, tenía como objetivo regresar a la superficie lunar en 2024. Pero un déficit presupuestario para el financiamiento del sistema de alunizaje ha alejado esa meta.
+          Elon Musk ha estado desarrollando el diseño Starship durante años. Parecido a los cohetes de la era dorada del cine de ciencia ficción, es un elemento crucial en los planes a largo plazo del multimillonario empresario de poblar a Marte con humanos.
+          Por ahora, sin embargo, servirá de módulo de alunizaje que transportará a los astronautas de una órbita lunar hasta la superficie del satélite.
+          Con una amplia cabina y dos cámaras de descompresión, que permitirán la salida de los astronautas para sus caminatas lunares, es muy diferente al esquelético módulo lunar (ML) que posó a 12 hombres en la Luna con el programa Apolo de Estados Unidos entre 1969 y 1972. 
+         <br>
+          El nuevo vehículo será conocido como el Sistema de Aterrizaje Humano (HLS, por sus siglas en inglés).
+        </small></p></P>
+      </div>
+    </div>
+</body>
+</html> 

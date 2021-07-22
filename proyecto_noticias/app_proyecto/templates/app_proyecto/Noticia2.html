@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <link href="switch.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Adoptados 507 perros y 413 gatos en Barcelona en 2020 pese a la pandemia</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="{% static 'IMG/Caos news.png' %}"width="50" height="30" class="d-inline-block align-top" alt="" >
+        CAOS NEWS  
+      </a>
+          <form style class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form> 
+    </nav>
+    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
+        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
+        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
+        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
+        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
+        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
+        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+      </nav>
+    </div>
+    <hr>
+    <h4 class="categoria" style="margin-right: 50px;margin-left: 50px;">-Animales</h4>
+    <hr>
+    <h1 class="titular" style="margin-right: 50px;margin-left: 50px;">Adoptados 507 perros y 413 gatos en Barcelona en 2020 pese a la pandemia</h1>
+    <br>
+    <hr>
+    <h4 class="autor" style="margin-right: 50px;margin-left: 50px;">El Periódico<br>
+    Actualizado el 07 de marzo del 2021</h4>
+    <img src="{% static 'IMG/adopta_gato.jpg' %}" width="1000px" height="500px" alt="portada adopta gato" style="vertical-align:middle;margin: 100px 100px">
+    <div class="col-md-8"></div>
+      <div class="card-body">
+        <p class="card-text">
+        Un total de 507 perros y 413 gatos fueron adoptados en Barcelona durante en 2020, en un año atípico por la pandemia
+        y el confinamiento en el que se han abandonado en la ciudad menos animales que en otros años. 
+        Según ha informado el Ayuntamiento de Barcelona, en el último año se ha mantenido la tendencia a la baja en los abandonos,
+        ya que, en los últimos cuatro años, se ha reducido un 44 % el número de perros que han entrado en el Centro de Acogida de Animales
+        de Compañía de Barcelona (CAACB) y un 22 %, el de gatos.
+    </p>
+    <p class="card-text">
+        El consistorio cree que las campañas de concienciación y de fomento de la tenencia responsable que ha hecho el ayuntamiento con el apoyo 
+        de diversas entidades colaboradoras "han dado sus frutos". La tercera teniente de alcaldía, Laia Bonet, cree que la ciudadanía cada vez tiene
+        más claro que tener un animal en casa es "un motivo de alegría, pero también una responsabilidad y un compromiso".
+    </p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% load static %}
+{% extends "subir_noticias.html" %}
+
+{% block content %}
+
+<a href="{% url 'app_proyecto:api' %}">Volver a la lista</a>
+<div>
+    {{ message }}
+</div>
+<br>
+<form method="POST"  enctype="multipart/form-data">
+    {% csrf_token %}
+    <label>
+        Autor
+    </label>
+    {{ request.user.username }}
+    
+    {{ post_form.as_p }}
+    
+    <button type="submit">Crear post</button>
+
+</form>
+
+
+{% endblock content %}
