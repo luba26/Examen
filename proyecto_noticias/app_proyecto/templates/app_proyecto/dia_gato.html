@@ -1,92 +1,180 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-  <head> 
-    <meta charset="UTF-8">
-    <link href="switch.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="switch.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
     <title>¿Y qué día no es el día del gato?</title>
   </head>
   <body>
     <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
-        CAOS NEWS  
+      <a class="navbar-brand" href="/index">
+        <img
+          src="{% static 'IMG/Caos news.png' %}"
+          width="50"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        CAOS NEWS
       </a>
-          <form style class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-          </form> 
+      <form style class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Buscar"
+          aria-label="Buscar"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Buscar
+        </button>
+      </form>
     </nav>
-    <div style="border: black 3px solid;" class="nav-scroller py-1 mb-2">
+    <div style="border: black 3px solid" class="nav-scroller py-1 mb-2">
       <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="cat_actualidad.html">Actualidad</a>
-        <a class="p-2 text-muted" href="cat_animales.html">Animales</a>
-        <a class="p-2 text-muted" href="cat_deportes.html">Deportes</a>
-        <a class="p-2 text-muted" href="cat_salud.html">Salud </a>
-        <a class="p-2 text-muted" href="cat_tecnologia.html">Tecnologia</a>
-        <a class="p-2 text-muted" href="cat_ocio.html">Ocio</a>
-        <a class="p-2 text-muted" href="api_de_prueba.html">Internacional</a>
+        <a class="p-2 text-muted" href="/cat_actualidad">Actualidad</a>
+        <a class="p-2 text-muted" href="/cat_animales">Animales</a>
+        <a class="p-2 text-muted" href="/cat_deportes">Deportes</a>
+        <a class="p-2 text-muted" href="/cat_salud">Salud </a>
+        <a class="p-2 text-muted" href="/cat_tecnologia">Tecnologia</a>
+        <a class="p-2 text-muted" href="/cat_ocio">Ocio</a>
+        <a class="p-2 text-muted" href="/api_de_prueba">Internacional</a>
       </nav>
     </div>
-    <hr>
-    <h4 class="categoria" style="margin-right: 50px;margin-left: 50px;">-Animales</h4>
-    <hr>
-    <h1 class="titular" style="margin-right: 50px;margin-left: 50px;">¿Y qué día no es el día del gato? <br>
-    Estamos lejos de que a los gatos se les reconozcan como propios los 365 días del año, pero es una cuestión de tiempo</h1>
-    <br>
-    <hr>
-    <h4 class="autor" style="margin-right: 50px;margin-left: 50px;">Pedro Zuazua<br>
-        actualizado el 19 de febrero del 2021</h4>
-    <img src="{% static 'IMG/portadagato.jpg' %}" width="1000px" height="500px" alt="portada gato" style="vertical-align:middle;margin: 100px 100px">
+    <hr />
+    <h4 class="categoria" style="margin-right: 50px; margin-left: 50px">
+      -Animales
+    </h4>
+    <hr />
+    <h1 class="titular" style="margin-right: 50px; margin-left: 50px">
+      ¿Y qué día no es el día del gato? <br />
+      Estamos lejos de que a los gatos se les reconozcan como propios los 365
+      días del año, pero es una cuestión de tiempo
+    </h1>
+    <br />
+    <hr />
+    <h4 class="autor" style="margin-right: 50px; margin-left: 50px">
+      Pedro Zuazua<br />
+      actualizado el 19 de febrero del 2021
+    </h4>
+    <img
+      src="{% static 'IMG/portadagato.jpg' %}"
+      width="1000px"
+      height="500px"
+      alt="portada gato"
+      style="vertical-align: middle; margin: 100px 100px"
+    />
     <div class="col-md-8">
       <div class="card-body">
-
         <p class="card-text">
-        Uno nunca sabe en qué momento se va a replantear su vida. A mí me sucedió hace dos semanas. Eran las cinco de la mañana 
-        cuando Atún, el pequeño de mis dos gatos, empezó a maullar y a ejercer esa estrategia de presión tan específicamente felina
-        y tan altamente eficaz para que los humanos se despierten: pegar su cara a la tuya de tal manera que están lo suficientemente lejos
-        como para ni tan siquiera rozarte con los bigotes, pero lo necesariamente cerca como para que sientas que están ahí, mirándote fijamente.
-        Supongo que esto es algo que les habrá pasado a muchas otras personas que comparten su vida con gatos. Sé que suena extraño, 
-        pero no es tan raro despertarse y encontrarse un primer plano de tu gato observándote con una expresión a medio camino entre la observación científica, 
-        la de hacerte sentir culpable por no hacerle el caso que él cree que se merece y, la más concreta, la de no considerarte una presa. Todavía.       
-        Atún es un gato muy inquieto, y todas las noches se da varios paseos por encima de mí. Lo hace como si no hubiera nadie más en la cama. 
-        Le da igual pisar barriga, cara o pierna.
+          Uno nunca sabe en qué momento se va a replantear su vida. A mí me
+          sucedió hace dos semanas. Eran las cinco de la mañana cuando Atún, el
+          pequeño de mis dos gatos, empezó a maullar y a ejercer esa estrategia
+          de presión tan específicamente felina y tan altamente eficaz para que
+          los humanos se despierten: pegar su cara a la tuya de tal manera que
+          están lo suficientemente lejos como para ni tan siquiera rozarte con
+          los bigotes, pero lo necesariamente cerca como para que sientas que
+          están ahí, mirándote fijamente. Supongo que esto es algo que les habrá
+          pasado a muchas otras personas que comparten su vida con gatos. Sé que
+          suena extraño, pero no es tan raro despertarse y encontrarse un primer
+          plano de tu gato observándote con una expresión a medio camino entre
+          la observación científica, la de hacerte sentir culpable por no
+          hacerle el caso que él cree que se merece y, la más concreta, la de no
+          considerarte una presa. Todavía. Atún es un gato muy inquieto, y todas
+          las noches se da varios paseos por encima de mí. Lo hace como si no
+          hubiera nadie más en la cama. Le da igual pisar barriga, cara o
+          pierna.
         </p>
         <p class="card-text">
-        Hay una teoría que dice que los gatos ponen sus patas traseras exactamente en el mismo lugar en el que se han posado previamente las delanteras. 
-        Basándome en la mera observación de Atún, diría que hay que afinar ese estudio un poco más.       
-        Pero que tampoco estaba siendo una noche muy diferente a las demás, vaya. Después de pasear un rato, Atún suele acostarse a mi lado y lo acaricio hasta que se duerme de nuevo. 
-        La cosa cambió cuando Mía, la gata mayor, se sumó a la fiesta. No suele aparecer de noche, 
-        porque pasa bastante de su hermano y de mí, pero esa madrugada le apetecía entrar en uno de los armarios de la habitación. ¿Y qué hace un gato cuando quiere que le abran una puerta? 
-        Te lo pide hasta que accedes por agotamiento. Mía empezó a golpear la puerta con la zarpa. Al principio, lentamente. Después, como si fuera un cajón flamenco.
+          Hay una teoría que dice que los gatos ponen sus patas traseras
+          exactamente en el mismo lugar en el que se han posado previamente las
+          delanteras. Basándome en la mera observación de Atún, diría que hay
+          que afinar ese estudio un poco más. Pero que tampoco estaba siendo una
+          noche muy diferente a las demás, vaya. Después de pasear un rato, Atún
+          suele acostarse a mi lado y lo acaricio hasta que se duerme de nuevo.
+          La cosa cambió cuando Mía, la gata mayor, se sumó a la fiesta. No
+          suele aparecer de noche, porque pasa bastante de su hermano y de mí,
+          pero esa madrugada le apetecía entrar en uno de los armarios de la
+          habitación. ¿Y qué hace un gato cuando quiere que le abran una puerta?
+          Te lo pide hasta que accedes por agotamiento. Mía empezó a golpear la
+          puerta con la zarpa. Al principio, lentamente. Después, como si fuera
+          un cajón flamenco.
         </p>
         <p class="card-text">
-        Me incorporé para abrirle la puerta y que pudiera entrar, teniendo cuidado de que se quedara entreabierta, porque sé perfectamente que estará solo cinco minutos. 
-        ¿Qué sucedió? Pues que al levantarme, Atún se despertó. Y la fiesta comenzó.
-        De repente me vi abriendo la puerta a mi gata para que pudiera entrar a llenar de pelos las camisas, con mi otro gato saltando y corriendo por la cama… Y todo a las cinco de la mañana. 
-        Y todo sin Juan Luis Guerra cerca. Y sí, tuve un (breve) momento de lucidez y me replanteé mi vida. Porque la situación, si lo piensan un poco, es para, al menos, echarle una reflexión. 
-        Y si no lo piensan un poco, también. A mis 39 años, desvelado de madrugada, abriéndole la puerta del armario a mi gata y siendo pisado con garbo por mi gato.
+          Me incorporé para abrirle la puerta y que pudiera entrar, teniendo
+          cuidado de que se quedara entreabierta, porque sé perfectamente que
+          estará solo cinco minutos. ¿Qué sucedió? Pues que al levantarme, Atún
+          se despertó. Y la fiesta comenzó. De repente me vi abriendo la puerta
+          a mi gata para que pudiera entrar a llenar de pelos las camisas, con
+          mi otro gato saltando y corriendo por la cama… Y todo a las cinco de
+          la mañana. Y todo sin Juan Luis Guerra cerca. Y sí, tuve un (breve)
+          momento de lucidez y me replanteé mi vida. Porque la situación, si lo
+          piensan un poco, es para, al menos, echarle una reflexión. Y si no lo
+          piensan un poco, también. A mis 39 años, desvelado de madrugada,
+          abriéndole la puerta del armario a mi gata y siendo pisado con garbo
+          por mi gato.
         </p>
         <p class="card-text">
-        Me vino a la mente esta situación porque esta semana celebramos el Día Internacional del Gato. Al parecer, se instauró el 20 de febrero como fecha porque fue el día en que se murió Calcetines, 
-        el gato de durante 20 años convivió con la familia Clinton y que se instaló en la Casa Blanca cuando Bill fue presidente. Desconozco si se puede tener más poder que siendo el gato del presidente de los Estados Unidos, la verdad. 
-        A la autoridad felina se le añade el botón nuclear. Casi nada.
-        Calcetines también era el lobo que se hacía amigo de Kevin Costner en Bailando con lobos. Y, sospecho, cualquier animal doméstico que tiene las zarpas de un color diferente al del resto de la pata.
-        Pero en lugar de reflexionar sobre si Kevin Costner estaba mejor en Bailando con lobos, en El Guardaespaldas o en los Intocables de Eliot Ness, que es un debate bien interesante, mi mente regresó a aquella madrugada en la que mis gatos montaron una fiesta en mi habitación.
-        Y aquella reflexión se convirtió, entonces, en incomprensión. No entiendo que haya un Día internacional del gato. No viene a cuento. ¿De quién se creen que son los 364 días restantes? ¿Cómo creen que es la convivencia-tiránica-consentida-y-aceptada con los felinos domésticos?
-        A veces pienso que ellos me ven como un okupa en su morada. Cuando pasean por la casa, además de reflexionar sobre con qué autoridad cruzan las estancias, noto que me miran un poco de soslayo, sin entender por qué estoy en su sofá y, sobre todo, cómo puedo aguantar estando en su sofá sin rascarlo.
+          Me vino a la mente esta situación porque esta semana celebramos el Día
+          Internacional del Gato. Al parecer, se instauró el 20 de febrero como
+          fecha porque fue el día en que se murió Calcetines, el gato de durante
+          20 años convivió con la familia Clinton y que se instaló en la Casa
+          Blanca cuando Bill fue presidente. Desconozco si se puede tener más
+          poder que siendo el gato del presidente de los Estados Unidos, la
+          verdad. A la autoridad felina se le añade el botón nuclear. Casi nada.
+          Calcetines también era el lobo que se hacía amigo de Kevin Costner en
+          Bailando con lobos. Y, sospecho, cualquier animal doméstico que tiene
+          las zarpas de un color diferente al del resto de la pata. Pero en
+          lugar de reflexionar sobre si Kevin Costner estaba mejor en Bailando
+          con lobos, en El Guardaespaldas o en los Intocables de Eliot Ness, que
+          es un debate bien interesante, mi mente regresó a aquella madrugada en
+          la que mis gatos montaron una fiesta en mi habitación. Y aquella
+          reflexión se convirtió, entonces, en incomprensión. No entiendo que
+          haya un Día internacional del gato. No viene a cuento. ¿De quién se
+          creen que son los 364 días restantes? ¿Cómo creen que es la
+          convivencia-tiránica-consentida-y-aceptada con los felinos domésticos?
+          A veces pienso que ellos me ven como un okupa en su morada. Cuando
+          pasean por la casa, además de reflexionar sobre con qué autoridad
+          cruzan las estancias, noto que me miran un poco de soslayo, sin
+          entender por qué estoy en su sofá y, sobre todo, cómo puedo aguantar
+          estando en su sofá sin rascarlo.
         </p>
         <p class="card-text">
-        En su mente, soy un señor que se instala en algunos de sus espacios preferidos y, por lo tanto, ven normal muchas de las cosas extrañas que hago para complacerlos en sus deseos o para no importunarlos en alguna de las 14 siestas que se echan -de media- al día. Es altamente probable que, cada noche, 
-        cuando Atún se tumba a mi lado, piense: “¿pero este tío qué hace en mi cama otra vez?”.
-        Su poder es tal que pueden llegar incluso a anularlo a uno como persona. Hace un par de meses, piratearon la cuenta de Instagram de mis gatos. Durante los dos meses que estuve sin ella, cada vez que publicaba algo en mi cuenta personal, muchas personas hacían la misma pregunta en los comentarios: “¿Sabes cuándo va a volver el Instagram de Mía y Atún?”. 
-        Mis publicaciones no interesaban a nadie. Lo peor no era eso, sino que varios amigos se dieran cuenta y me lo hicieran saber vía cariñosos mensajes que decían: “No eres nadie sin tus gatos”.
-        Y, de nuevo, en lugar de reflexionar sobre la calidad de mis amistades o la colonización de mis espacios virtuales llevada a cabo por mis gatos, no se me quitaba de la cabeza la injusta celebración del Día Internacional del Gato. Había algo raro. Tenía la sensación de que acababa de celebrarse. 
-        Efectivamente el gato es el único concepto en el mundo que tiene no uno, ni dos, sino tres días internacionales -el 20 de febrero, el 8 de agosto y el 29 de octubre-. Por aportar un poco de contexto: La paz mundial solo tiene un día al año (el 21 de septiembre, por si les interesa). Ningún derecho, movimiento, colectivo ni, por supuesto, ningún otro animal, tiene tantos días de celebración.
-        Aún estamos lejos de que se les reconozcan como propios los 365 días del año. Pero todos los que convivimos con ellos sabemos que es únicamente una cuestión de tiempo.
+          En su mente, soy un señor que se instala en algunos de sus espacios
+          preferidos y, por lo tanto, ven normal muchas de las cosas extrañas
+          que hago para complacerlos en sus deseos o para no importunarlos en
+          alguna de las 14 siestas que se echan -de media- al día. Es altamente
+          probable que, cada noche, cuando Atún se tumba a mi lado, piense:
+          “¿pero este tío qué hace en mi cama otra vez?”. Su poder es tal que
+          pueden llegar incluso a anularlo a uno como persona. Hace un par de
+          meses, piratearon la cuenta de Instagram de mis gatos. Durante los dos
+          meses que estuve sin ella, cada vez que publicaba algo en mi cuenta
+          personal, muchas personas hacían la misma pregunta en los comentarios:
+          “¿Sabes cuándo va a volver el Instagram de Mía y Atún?”. Mis
+          publicaciones no interesaban a nadie. Lo peor no era eso, sino que
+          varios amigos se dieran cuenta y me lo hicieran saber vía cariñosos
+          mensajes que decían: “No eres nadie sin tus gatos”. Y, de nuevo, en
+          lugar de reflexionar sobre la calidad de mis amistades o la
+          colonización de mis espacios virtuales llevada a cabo por mis gatos,
+          no se me quitaba de la cabeza la injusta celebración del Día
+          Internacional del Gato. Había algo raro. Tenía la sensación de que
+          acababa de celebrarse. Efectivamente el gato es el único concepto en
+          el mundo que tiene no uno, ni dos, sino tres días internacionales -el
+          20 de febrero, el 8 de agosto y el 29 de octubre-. Por aportar un poco
+          de contexto: La paz mundial solo tiene un día al año (el 21 de
+          septiembre, por si les interesa). Ningún derecho, movimiento,
+          colectivo ni, por supuesto, ningún otro animal, tiene tantos días de
+          celebración. Aún estamos lejos de que se les reconozcan como propios
+          los 365 días del año. Pero todos los que convivimos con ellos sabemos
+          que es únicamente una cuestión de tiempo.
         </p>
       </div>
     </div>
-</body>
+  </body>
 </html>
