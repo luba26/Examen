@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head> 
@@ -13,7 +14,7 @@
   <body>
      <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="/index">
-        <img src="{% static 'img/Caos new.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
+        <img src="{% static 'IMG/Caos news.png' %}" width="50" height="30" class="d-inline-block align-top" alt="" >
         CAOS NEWS  
       </a>
           <form style class="form-inline">
@@ -54,7 +55,7 @@
       <div class="row no-gutters">
         <div class="col-md-4">
           <a href="/noticia_nasa" title="LA NASA">
-            <img alt="SpaceX"  src="{% static 'IMG/actualidad_nasa.jpg' %}" width="300" height="170" />
+            <img alt="SpaceX"  src="{% static 'IMG/actualidad nasa.jpg' %}" width="300" height="170" />
            </a>
         </div>
         <div class="col-md-8">
@@ -70,7 +71,7 @@
     <div style="text-align: center;" class="card mb-3" style="max-width: 900px;">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <a href="/noticia_titanic" title="El titanic"> <img alt="El titanic"  src="IMG\titanic.jpg" width="300" height="170" /> </a>
+          <a href="/noticia_titanic" title="El titanic"> <img alt="El titanic"  src="{% static 'IMG/titanic.jpg' %}" width="300" height="170" /> </a>
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -86,7 +87,7 @@
       <div class="row no-gutters">
         <div class="col-md-4">
           <a href="/Bad_Bunny"  title="WWE">
-            <img alt="bad bunny"  src="IMG\bad bunny.jpg" width="300" height="170"/>
+            <img alt="bad bunny"  src="{% static 'IMG\bad bunny.jpg' %}" width="300" height="170"/>
            </a>
         </div>
         <div class="col-md-8">
