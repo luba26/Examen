@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 app_name = 'app_proyecto'
 
 urlpatterns = [
-    path('actualidad', views.actualidad, name='actualidad'),
+    path('cat_actualidad', views.actualidad, name='actualidad'),
     path('api_de_prueba/',views.api_de_prueba, name='api'),
     path('Bad_Bunny/', views.Bad_Bunny, name='Bad_Bunny'),
     path('cat_animales/', views.animales, name='animales'),
@@ -17,7 +17,7 @@ urlpatterns = [
     path('Confirmacion/', views.Confirmacion, name='confirmacion'),
     path('Contactanos/', views.Contacto, name='contacto'),
     path('dia_gato/', views.dia_gato, name='gato'),
-    path('Formulario/', views.Formulario, name='formulario'),
+    path('formulario/', views.Formulario, name='formulario'),
     path('hitman/', views.hitman, name='hitsman'),
     path('index/', views.index, name='home'),
     path('login/', views.login, name='login'),
@@ -37,7 +37,9 @@ urlpatterns = [
     path('tecno3/', views.tecno3, name='tecno3'),
     path('Universidad_Catolica/', views.Universidad_Catolica, name='Cato'),
     path('Universidad_de_Chile/', views.Universidad_de_Chile, name='u_chile'),
-    path('', views.PostListView.as_view(), name='api'),
+    path('', views.index, name='home'),
     path('detalle/<int:pk>', views.PostDetailView.as_view(), name='detalle'),
     path('crear', views.post_crear, name='crear'),
 ]
+
+
