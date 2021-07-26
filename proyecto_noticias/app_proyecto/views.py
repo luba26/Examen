@@ -10,7 +10,7 @@ from django.views.generic import DetailView, ListView
 def actualidad (request):
     return HttpResponse('actualidad.html', {})
 def api_de_prueba(request):
-    return render(request, 'app_proyecto/apo_de_prueba.html',{})
+    return render(request, 'app_proyecto/api_de_prueba.html',{})
 def Bad_Bunny(request):
     return render(request, 'app_proyecto/Bad_Bunny.html',{})
 def actualidad(request):
